@@ -1,0 +1,15 @@
+$(document).ready(function()
+alert('Hola desde jQuery');
+$(#get-joker").click(function(){
+
+$.ajax({
+url: "https://api.chucknorris.io/jokes/random",
+type: GET,
+success: function(data){
+$('.card.text').text(data.value);
+
+}
+}
+})
+)}
+})
